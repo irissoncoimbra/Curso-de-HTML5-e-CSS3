@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens que se adaptam sozinhas</title>
+</head>
+<body>
+    <h1>Imagens que se adaptam sozinhas</h1>
+        <p>A tag &lt;<i>picture</i>&gt;  permite adicionar várias imagens</p>
+        <p>Lembrando sempre que dentro da tag &lt;<i>picture</i>&gt; a imagem base é a última. Devemos então criar uma hierarquia crescente no código: do menor pro maior, como está o código abaixo:</p>
+        <p>
+            <picture>
+                <source media="(max-width: 750px)" srcset="imagens/p.webp" type="image/webp">
+                <source media="(max-width: 1050px)" srcset="imagens/m.webp" type="image/webp">
+                <img src="imagens/g.webp" alt="Imagem flexível">
+            </picture>
+        </p>
+</body>
+</html>
